@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mokoko">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".model.Multi_Dex"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:theme="@style/SplassScreenCustom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SignupActivity"
+            android:label="Daftar"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SignupUserActivity"
+            android:label="Daftar"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="Masuk"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UploadActivity"
+            android:label="Pasang Promo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AllProductResultActivity"
+            android:label="Semua Produk"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.NearestTokoActivity"
+            android:label="Toko Terdekat"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.KatalogActivity"
+            android:label="Katalog Promoku"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AkunActivity"
+            android:label="Profil Akun"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProfileTokoActivity"
+            android:label="Profil Toko"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProfileUserActivity"
+            android:label="Profil Sales"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.KategoriActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SearchResultNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProdukDetilActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.AllProductResultActivity" />
+        </activity>
+        <activity android:name=".activity.ImgFullscreenActivity" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UbahPromoActivity"
+            android:label="Ubah Promo"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.KatalogActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activity.MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.ProdukDetilActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TentangActivity"
+            android:label="Tentang"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.HelpActivity"
+            android:label="Pusat Bantuan"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AkunMenuActivity"
+            android:label="Akun Saya"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.DaftarTokoActivity"
+            android:label="Daftar Toko"
+            android:screenOrientation="portrait"
+            android:theme="@style/DaftarToko"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.DompetkuActivity"
+            android:label="Dompetku"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PindaiActivity"
+            android:label="Pindai"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.DompetkuActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TerimaActivity"
+            android:label="Terima Saldo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.DompetkuActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TransaksiActivity"
+            android:label="Transaksi"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.DompetkuActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TopupActivity"
+            android:label="Topup Saldo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.DompetkuActivity" />
+        </activity>
+        <activity
+            android:name=".activity.WithdrawActivity"
+            android:label="Withdraw Saldo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.DompetkuActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ResultTransActivity"
+            android:label="Informasi Transaksi"
+            android:screenOrientation="portrait"
+            android:theme="@style/MasukDaftar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mokoko.activity.DompetkuActivity" />
+        </activity>
+    </application>
+
+</manifest>
