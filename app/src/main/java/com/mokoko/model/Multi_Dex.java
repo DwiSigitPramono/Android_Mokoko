@@ -10,4 +10,10 @@ public class Multi_Dex extends Application {
         super.attachBaseContext(base);
         MultiDex.install(this);
     }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/font.ttf");
+    }
 }

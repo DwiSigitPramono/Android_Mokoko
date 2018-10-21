@@ -1,20 +1,21 @@
 <ScrollView
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#fff"
+        android:background="#f7f7f7"
         android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#fff">
+            android:background="#f7f7f7">
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewPager2"
@@ -36,9 +37,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp">
+            android:background="#f7f7f7"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/tvHotPromo"
@@ -54,21 +54,24 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
+            android:layout_height="130dp"
             android:orientation="horizontal"
-            android:background="#fff"
+            android:background="#f7f7f7"
             android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="5dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -90,12 +93,11 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
                             android:text="Semua\nKategori"
                             android:paddingTop="10dp"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -105,13 +107,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -133,12 +136,11 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
                             android:paddingTop="10dp"
-                            android:text="Aneka Jenis Makanan"
+                            android:text="Aneka Jenis\nMakanan"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -147,13 +149,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="-5dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -175,57 +180,13 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
                             android:paddingTop="10dp"
-                            android:text="Aneka Jenis Minuman"
+                            android:text="Aneka Jenis\nMinuman"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-                <android.support.v7.widget.CardView
-                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
-                    card_view:cardBackgroundColor="#fff"
-                    android:clickable="true"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    card_view:cardUseCompatPadding="true"
-                    android:onClick="sembako">
-
-                    <LinearLayout
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_gravity="center">
-
-                        <ImageView
-                            android:layout_width="35dip"
-                            android:layout_height="35dip"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_sembako_2" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Kebutuhan Dapur"
-                            android:paddingTop="10dp"
-                            android:textAlignment="center"
-                            android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
@@ -233,22 +194,25 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="105dp"
-            android:background="#fff"
+            android:layout_height="130dp"
+            android:background="#f7f7f7"
             android:orientation="horizontal"
             android:layout_weight="1"
-            android:paddingBottom="5dp">
+            android:layout_marginTop="-10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="5dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -270,12 +234,11 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
                             android:paddingTop="10dp"
                             android:text="Keb. Rumah\nTangga"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -284,13 +247,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -312,12 +276,11 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
                             android:paddingTop="10dp"
-                            android:text="Perlengkapan Anak"
+                            android:text="Perlengkapan\nAnak"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -326,13 +289,72 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="-5dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
+                    card_view:cardBackgroundColor="#fff"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardUseCompatPadding="true"
+                    android:onClick="sembako">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sembako_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Kebutuhan\nDapur"
+                            android:paddingTop="10dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorSc2"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:background="#f7f7f7"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="-10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="5dp">
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -354,12 +376,11 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
-                            android:text="Alat Tulis Kantor"
+                            android:text="Alat Tulis\nKantor"
                             android:paddingTop="10dp"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -369,13 +390,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -397,16 +419,20 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
                             android:paddingTop="10dp"
                             android:text="Kategori\nLain"
                             android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
 
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
             </LinearLayout>
 
         </LinearLayout>
@@ -414,7 +440,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            android:background="#f7f7f7"
             android:layout_marginTop="15dp">
 
             <TextView
@@ -430,21 +456,24 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="80dp"
+            android:layout_height="130dp"
+            android:background="#f7f7f7"
             android:orientation="horizontal"
-            android:layout_weight="1"
-            android:background="#fff">
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginStart="5dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -452,31 +481,25 @@
                     android:onClick="potHarga">
 
                     <LinearLayout
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginEnd="2dp"
+                        android:orientation="vertical"
                         android:layout_gravity="center">
 
                         <ImageView
-                            android:layout_weight="2"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dip"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_pot_harga" />
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:src="@drawable/ic_pot_harga"
+                            android:layout_gravity="center"/>
 
                         <TextView
-                            android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
-                            android:gravity="center_vertical"
-                            android:text="Potongan Harga"
-                            android:layout_marginStart="2dp"
+                            android:paddingTop="10dp"
+                            android:text="Potongan\nHarga"
+                            android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:textSize="11sp"/>
-
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -485,13 +508,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="3dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -499,47 +523,43 @@
                     android:onClick="proSama">
 
                     <LinearLayout
-                        android:layout_width="fill_parent"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginEnd="2dp"
+                        android:orientation="vertical"
                         android:layout_gravity="center">
 
                         <ImageView
-                            android:layout_weight="2"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dip"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_pro_sama" />
+                            android:src="@drawable/ic_pro_sama"/>
 
                         <TextView
-                            android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
-                            android:gravity="center_vertical"
-                            android:text="Gratis Produk Sama"
+                            android:paddingTop="10dp"
+                            android:text="Gratis \nProduk Sama"
+                            android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            android:textSize="11sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
-
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="-5dp">
                 <android.support.v7.widget.CardView
                     xmlns:card_view="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    card_view:cardCornerRadius="2dp"
-                    card_view:cardElevation="1dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="4dp"
                     card_view:cardBackgroundColor="#fff"
                     android:clickable="true"
                     android:foreground="?android:attr/selectableItemBackground"
@@ -549,29 +569,23 @@
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginEnd="2dp"
+                        android:orientation="vertical"
                         android:layout_gravity="center">
 
                         <ImageView
-                            android:layout_weight="2"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dip"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_pro_beda" />
 
                         <TextView
-                            android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="sans-serif-medium"
-                            android:gravity="center_vertical"
-                            android:text="Gratis Produk Lain"
+                            android:text="Gratis \nProduk Lain"
+                            android:paddingTop="10dp"
+                            android:textAlignment="center"
                             android:textColor="@color/colorSc2"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            android:textSize="11sp"/>
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -584,9 +598,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            android:background="#f7f7f7"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:id="@+id/llDaftarHome">
 
             <android.support.v7.widget.CardView
@@ -596,7 +612,9 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp">
+                android:layout_marginBottom="5dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
