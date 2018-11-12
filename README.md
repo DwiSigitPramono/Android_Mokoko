@@ -1,1 +1,2 @@
-# android-mokoko
+# Android-Mokoko
+Mokoko Android App (Mobile App Competitions)
