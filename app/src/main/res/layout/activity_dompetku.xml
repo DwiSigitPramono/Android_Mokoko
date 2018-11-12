@@ -23,6 +23,7 @@
                 android:layout_height="match_parent"
                 card_view:cardCornerRadius="3dp"
                 android:elevation="3dp"
+
                 card_view:cardBackgroundColor="#fff"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -58,7 +59,6 @@
                             android:id="@+id/tvSaldo"
                             android:textSize="35sp"
                             android:textAlignment="center"
-                            android:fontFamily="sans-serif-medium"
                             android:textColor="#fff"/>
 
                     </LinearLayout>
@@ -105,7 +105,7 @@
                                 android:layout_marginStart="10dp"
                                 android:text="Kirim Saldo"
                                 android:gravity="center_vertical"
-                                android:textColor="#2e2e2e"
+                                android:textColor="@color/colorSc"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -147,7 +147,7 @@
                                 android:layout_marginStart="10dp"
                                 android:text="Terima Saldo"
                                 android:gravity="center_vertical"
-                                android:textColor="#2e2e2e"
+                                android:textColor="@color/colorSc"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -189,7 +189,7 @@
                                 android:layout_marginStart="10dp"
                                 android:text="Transaksi"
                                 android:gravity="center_vertical"
-                                android:textColor="#2e2e2e"
+                                android:textColor="@color/colorSc"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -231,7 +231,7 @@
                                 android:layout_marginStart="10dp"
                                 android:text="Topup Saldo"
                                 android:gravity="center_vertical"
-                                android:textColor="#2e2e2e"
+                                android:textColor="@color/colorSc"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -273,7 +273,7 @@
                                 android:layout_marginStart="10dp"
                                 android:text="Withdraw Saldo"
                                 android:gravity="center_vertical"
-                                android:textColor="#2e2e2e"
+                                android:textColor="@color/colorSc"
                                 android:textSize="16sp" />
 
                         </LinearLayout>

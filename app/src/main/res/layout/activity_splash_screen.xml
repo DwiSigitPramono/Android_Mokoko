@@ -29,7 +29,6 @@
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:fontFamily="sans-serif-light"
             android:textColor="@color/colorPrimary"
             android:id="@+id/tvDesk"
             android:layout_alignParentBottom="true"

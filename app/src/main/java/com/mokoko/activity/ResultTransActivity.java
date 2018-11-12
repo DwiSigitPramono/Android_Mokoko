@@ -1,6 +1,5 @@
 package com.mokoko.activity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -74,7 +73,7 @@ public class ResultTransActivity extends AppCompatActivity {
         tvNominalTrans.setText(getMoney(m1));
         tvIdPenerima.setText(m2);
         Date date = new Date();
-        date.setTime(Long.valueOf(System.currentTimeMillis()));
+        date.setTime(System.currentTimeMillis());
         tvWaktuTrans.setText(new SimpleDateFormat("dd MMM yyyy, H:m").format(date));
     }
 
